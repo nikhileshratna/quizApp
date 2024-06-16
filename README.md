@@ -1,3 +1,9 @@
+if u want to run this in ur pc after cloning run these command :
+
+1) npm install
+
+2)npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
