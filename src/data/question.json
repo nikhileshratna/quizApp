@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of France?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "id": 2,
+    "question": "What is the capital of Germany?",
+    "options": ["Vienna", "Berlin", "Rome", "Madrid"],
+    "answer": "Berlin"
+  },
+  {
+    "id": 3,
+    "question": "What is the capital of Spain?",
+    "options": ["Lisbon", "Madrid", "Barcelona", "Seville"],
+    "answer": "Madrid"
+  },
+  {
+    "id": 4,
+    "question": "What is the capital of Italy?",
+    "options": ["Milan", "Rome", "Naples", "Venice"],
+    "answer": "Rome"
+  },
+  {
+    "id": 5,
+    "question": "What is the capital of the United Kingdom?",
+    "options": ["Manchester", "Liverpool", "Birmingham", "London"],
+    "answer": "London"
+  },
+  {
+    "id": 6,
+    "question": "What is the capital of Japan?",
+    "options": ["Osaka", "Kyoto", "Tokyo", "Nagoya"],
+    "answer": "Tokyo"
+  },
+  {
+    "id": 7,
+    "question": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "answer": "Ottawa"
+  },
+  {
+    "id": 8,
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+    "answer": "Canberra"
+  },
+  {
+    "id": 9,
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Bangalore", "Kolkata"],
+    "answer": "New Delhi"
+  },
+  {
+    "id": 10,
+    "question": "What is the capital of Brazil?",
+    "options": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+    "answer": "Brasília"
+  }
+]
