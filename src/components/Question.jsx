@@ -16,13 +16,13 @@ const Question = ({ question, onNext, onPrev }) => {
   const [clickedOption, setClickedOption] = useState(0);
 
   useEffect(() => {
-    console.log("useEffect triggered with studentAnswer:", studentAnswer);
+    // console.log("useEffect triggered with studentAnswer:", studentAnswer);
     if (studentAnswer?.[qid]) {
       setClickedOption(studentAnswer?.[qid]);
     } else {
       setClickedOption(0);
     }
-  }, [studentAnswer, qid, currentQuestionIndex]);
+  }, [studentAnswer, qid,currentQuestionIndex]);
 
   return (
     <div>

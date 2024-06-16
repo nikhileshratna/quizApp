@@ -38,6 +38,34 @@ const Quiz = () => {
     }
   },[]);
 
+  const [score , setScore] = useState(0);
+
+  const handleTryAgain = () => {
+    setScore(0);
+    setCurrentTimeLeft(600);
+    setCurrentQuestionIndex(0);
+    setStudentAnswer({});
+    setShowResult(false);
+  }
+
+  useEffect(() => {
+    const data = require('../data/question.json');
+    // setQuestions(data);
+    let finalScore = 0;
+    data?.forEach(element => {
+      console.log("inside for each loop",studentAnswer[element.id]  , element.answer);
+      if(studentAnswer[element.id] === element.answer){
+        finalScore = finalScore + 1;
+      }
+    });
+
+    setScore(finalScore);
+  
+    console.log("from quiz result");
+    console.log(studentAnswer);
+    console.log(data);
+  }, [studentAnswer, currentQuestionIndex]); 
+
   const handleNext = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
@@ -63,7 +91,7 @@ const Quiz = () => {
       {!setShowResult && <p className="heading-txt">Quiz App</p>}
       <div>
         {showResult ? (
-          <QuizResult/>
+          <QuizResult score = {score} handleTryAgain = {handleTryAgain}/>
         ) : ( 
           questions.length > 0 && (
             <div className="container">
