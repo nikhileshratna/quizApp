@@ -51,9 +51,9 @@ const FullScreenPrompt = ({ children }) => {
       {fullScreenPromptVisible && (
         <div className="fullscreen-prompt flex flex-col gap-2">
 
-          <h1>Please enable full-screen mode to continue the quiz.</h1>
+          <p className='text-3xl font-bold	'>Please enable full-screen mode to continue the quiz.</p>
 
-          <button className="mx-[100px]
+          <button className="mx-[250px] w-[175px]
           bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full
           " onClick={handleFullScreenButtonClick}>Enter Full-Screen</button>
           

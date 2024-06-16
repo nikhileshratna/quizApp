@@ -31,7 +31,7 @@ const Timer = () => {
 
   return (
     <div>
-      <h2>Time Left: {Math.floor(currentTimeLeft / 60)}:{currentTimeLeft % 60}</h2>
+      <h2 className="text-2xl font-bold">Time Left: {Math.floor(currentTimeLeft / 60)}:{currentTimeLeft % 60}</h2>
     </div>
   );
 };
