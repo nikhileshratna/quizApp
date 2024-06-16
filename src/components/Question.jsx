@@ -41,6 +41,7 @@ const Question = ({ question, onNext, onPrev }) => {
             onClick={() => {
               setClickedOption(i + 1);
               setStudentAnswer({ ...studentAnswer, [qid]: i + 1 });
+              localStorage.setItem("studentAnswer", JSON.stringify({...studentAnswer , [qid]: i + 1}));
               toast.success('Answer Submitted Successfully');
             }}
           >

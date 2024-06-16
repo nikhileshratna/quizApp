@@ -15,6 +15,8 @@ const Quiz = () => {
     setCurrentQuestionIndex,
     showResult,
     setShowResult,
+    studentAnswer,
+    setStudentAnswer
   } = useContext(QuizContext);
 
   useEffect(() => {
@@ -23,12 +25,16 @@ const Quiz = () => {
 
     const savedIndex = localStorage.getItem('currentQuestionIndex');
     const savedTime = localStorage.getItem('timeLeft');
+    const savedAnswer = localStorage.getItem('studentAnswer');
 
     if (savedIndex !== null) {
       setCurrentQuestionIndex(Number(savedIndex));
     }
     if (savedTime !== null) {
       setCurrentTimeLeft(Number(savedTime));
+    }
+    if (savedAnswer !== null) {
+      setStudentAnswer(JSON.parse(savedAnswer));
     }
   },[]);
 
